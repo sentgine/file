@@ -1,0 +1,18 @@
+{
+    "name": "sentgine/file",
+    "description": "A simple wrapper around file system operations.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Sentgine\\File\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Adrian Navaja",
+            "email": "sentgine@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
