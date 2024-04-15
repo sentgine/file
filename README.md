@@ -1,4 +1,4 @@
-# File
+# File by Sentgine
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE.md)
 [![Latest Stable Version](https://img.shields.io/packagist/v/sentgine/file.svg)](https://packagist.org/sentgine/file)
@@ -87,7 +87,7 @@ Thank you!
 ```
 
 ## Changelog
-Please see the [CHANGELOG](https://github.com/sentgine/file/CHANGELOG.md) file for details on what has changed.
+Please see the [CHANGELOG](https://github.com/sentgine/file/blob/main/CHANGELOG.md) file for details on what has changed.
 
 ## Security
 If you discover any security-related issues, please email sentgine@gmail.com instead of using the issue tracker.
@@ -96,4 +96,4 @@ If you discover any security-related issues, please email sentgine@gmail.com ins
 Helper is built and maintained by Adrian Navaja. Visit my [YOUTUBE](https://www.youtube.com/@sentgine) channel!
 
 ## License
-The MIT License (MIT). Please see the [LICENSE](https://github.com/sentgine/file/LICENSE) file for more information.
+The MIT License (MIT). Please see the [LICENSE](https://github.com/sentgine/file/blob/main/LICENSE) file for more information.
