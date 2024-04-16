@@ -21,7 +21,7 @@ File is a PHP library that provides a simple wrapper around file system operatio
 You can install the package via Composer by running the following command:
 
 ```bash
-composer require sentgine/file
+composer require sentgine/file:^1.0
 ```
 
 # Sample Usage of Filesystem
