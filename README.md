@@ -56,27 +56,25 @@ use Sentgine\File\Filesystem;
 // Create a new instance of the Filesystem class
 $fileSystem = new Filesystem();
 
-// Set source and destination files
-$fileSystem->setSourceFile('path/to/source/file.txt')
-           ->setDestinationFile('path/to/destination/file.txt');
+ // Get the content of the file.text file
+$content = $filesystem->setSourceFile('/source/directory/file.text')->read();
 
-// Define replacements
-$replacements = [
-    'placeholder1' => 'replacement1',
-    'placeholder2' => 'replacement2',
-];
+// Create a new directory if it doesn't exist
+$filesystem->createDirectory('/source/new_directory');
 
-try {
-    // Replace placeholders in the source file and write the modified content to the destination file
-    $fileSystem->replaceContent($replacements);
-    
-    echo "Content replaced successfully!";
-} catch (Exception $e) {
-    echo "An error occurred: " . $e->getMessage();
-}
+// Write the content to the Controller file
+$filesystem->setDestinationFile('/source/new_directory/new_file.text')->create($content);
+
+// Replace the content of the destination file
+$filesystem->replaceContent(
+    replacements: [
+       'placeholder1' => 'replacement1',
+        'placeholder2' => 'replacement2',
+    ]
+);
 ```
 
-The source file (path/to/source/file.txt) should contain placeholders formatted as {{ placeholder }}, as shown in the example below:
+The destination file (path/to/source/file.txt) should contain placeholders formatted as {{ placeholder }}, as shown in the example below:
 
 ```txt
 Hello {{ placeholder1 }},
@@ -93,7 +91,10 @@ Please see the [CHANGELOG](https://github.com/sentgine/file/blob/main/CHANGELOG.
 If you discover any security-related issues, please email sentgine@gmail.com instead of using the issue tracker.
 
 ## Credits
-Helper is built and maintained by Adrian Navaja. Visit my [YOUTUBE](https://www.youtube.com/@sentgine) channel!
+**Helper** is built and maintained by Adrian Navaja.
+- Check out some cool tutorials and stuff on [YouTube](https://www.youtube.com/@sentgine)!
+- Catch my latest tweets and updates on [Twitter](https://twitter.com/sentgine) (formerly X)!
+- Let's connect on a more professional note over on [LinkedIn](https://www.linkedin.com/in/adrian-navaja/)!
 
 ## License
 The MIT License (MIT). Please see the [LICENSE](https://github.com/sentgine/file/blob/main/LICENSE) file for more information.
