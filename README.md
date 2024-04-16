@@ -91,7 +91,7 @@ Please see the [CHANGELOG](https://github.com/sentgine/file/blob/main/CHANGELOG.
 If you discover any security-related issues, please email sentgine@gmail.com instead of using the issue tracker.
 
 ## Credits
-**Helper** is built and maintained by Adrian Navaja.
+**File** is built and maintained by Adrian Navaja.
 - Check out some cool tutorials and stuff on [YouTube](https://www.youtube.com/@sentgine)!
 - Catch my latest tweets and updates on [Twitter](https://twitter.com/sentgine) (formerly X)!
 - Let's connect on a more professional note over on [LinkedIn](https://www.linkedin.com/in/adrian-navaja/)!
