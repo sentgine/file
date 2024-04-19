@@ -257,4 +257,33 @@ class Filesystem
 
         return $this;
     }
+
+    /**
+     * Copies a file from the source to the destination.
+     *
+     * @param string|null $sourceFile The path to the source file (default: null, uses the default source file)
+     * @param string|null $destinationFile The path to the destination file (default: null, uses the default destination file)
+     *
+     * @return $this
+     * @throws FileNotFoundException if the source file does not exist
+     * @throws Exception if unable to copy the file
+     */
+    public function copy(?string $sourceFile = null, ?string $destinationFile = null): self
+    {
+        // If source file is not provided, use the default source file
+        $sourceFile = $sourceFile ?? $this->sourceFile;
+
+        // If destination file is not provided, use the default destination file
+        $destinationFile = $destinationFile ?? $this->destinationFile;
+
+        if (!file_exists($sourceFile)) {
+            throw new FileNotFoundException("Source file ($sourceFile) does not exist");
+        }
+
+        if (!copy($sourceFile, $destinationFile)) {
+            throw new Exception("Failed to copy file from ($sourceFile) to ($destinationFile)");
+        }
+
+        return $this;
+    }
 }
